@@ -2,7 +2,7 @@ import setuptools
 from setuptools import setup
 
 requirements = [
-    'pysteamauth==1.1.0',
+    'pysteamauth==1.1.2',
     'aiofiles==22.1.0',
     'cssselect==1.1.0',
     'lxml==5.3.0',
@@ -11,7 +11,7 @@ requirements = [
 
 setup(
     name='pysteamlib',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/sometastycake/pysteamlib',
     license='MIT',
     author='Mike M',
