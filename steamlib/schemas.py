@@ -8,7 +8,7 @@ class BaseSteamResponse(BaseModel):
     success: int
     errmsg: Optional[str]
 
-    @root_validator
+    @root_validator(skip_on_failure=True)
     def _check_error(cls, values: Dict) -> Dict:  # noqa:U100
         if values.get('success'):
             check_steam_error(
